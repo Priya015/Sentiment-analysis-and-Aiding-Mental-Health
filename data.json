@@ -1,0 +1,210 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "adverse_drug",
+     "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+     "responses": ["Navigating to Adverse drug reaction module"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure",
+     "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+     "responses": ["Navigating to Blood Pressure module"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure_search",
+     "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+     "responses": ["Please provide Patient ID", "Patient ID?"],
+     "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {"tag": "search_blood_pressure_by_patient_id",
+     "patterns": [],
+     "responses": ["Loading Blood pressure result for Patient"],
+     "context": [""]
+    },
+    {"tag": "pharmacy_search",
+     "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+     "responses": ["Please provide pharmacy name"],
+     "context": ["search_pharmacy_by_name"]
+    },
+    {"tag": "search_pharmacy_by_name",
+     "patterns": [],
+     "responses": ["Loading pharmacy details"],
+     "context": [""]
+    },
+    {"tag": "hospital_search",
+     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+     "responses": ["Please provide hospital name or location"],
+     "context": ["search_hospital_by_params"]
+    },
+    {"tag": "search_hospital_by_params",
+     "patterns": [],
+     "responses": ["Please provide hospital type"],
+     "context": ["search_hospital_by_type"]
+    },
+    {"tag": "search_hospital_by_type",
+     "patterns": [],
+     "responses": ["Loading hospital details"],
+     "context": [""]
+    },
+    {"tag": "definition",
+         "patterns": ["What does it mean to have a mental illness?", "What is mental health illness","Describe mental health illness"],
+         "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning."],
+         "context": [""]
+    },
+	{"tag": "affects_whom",     
+	 "patterns": ["Who does mental illness affect?", "Who is affected by mentall illness"],        
+	 "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness."],       
+ 	 "context": [""]    
+	},
+        {"tag": "what_causes",         
+	 "patterns": ["What causes mental illness?","What leads to mental illness?","how does one get mentally ill?"],         
+	 "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition."],       
+	 "context": [""]        
+	},
+	
+    {"tag": "recover",        
+	 "patterns": ["Can people with mental illness recover?","Is it possible to recover from mental illness"],        
+	 "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."],       
+	 "context": [""]        
+	},
+	{"tag": "steps",       
+	 "patterns": ["I know someone who appears to have such symptoms?","What are the steps to be followed incase of symptoms"],        
+	 "responses": ["Although this website cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery.If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."],        
+	 "context": [""]       
+	},	
+	{"tag": "find_help",
+	 "patterns": ["How to find mental health professional for myself","How to find mental health professional?"],
+	 "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."],
+	 "context": [""]
+	},
+	{"tag": "treatement_options",
+	 "patterns": ["What treatment options are available?","How can one recover?"],
+	 "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."],
+	 "context": [""]
+	},
+	{"tag": "treatment_tips",
+	 "patterns": ["How to become involved in treatment?","What should I keep in mind if I begin treatment?"],
+	 "responses":["Since beginning treatment is a big step for individuals and families, it can be very overwhelming."],
+	 "context": [""]
+	},
+	{"tag": "professional_types",
+	 "patterns": ["What is the difference between mental health professionals?","What are the different types of mental health professionals present?"],
+	 "responses":["There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."],
+	 "context": [""]
+	},
+	{"tag": "right_professional",
+	 "patterns": ["How can I find a mental health professional right myself?","How to find the right mental health professional?"],
+	 "responses":["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."],
+	 "context": [""]
+	},
+    {"tag" : "greetings",
+        "patterns": ["Hi","Hello","Whats up","How are you?","Hi Chatbot","hi chatbot","Hi chatbot","Good Morning","Good evening","Good Evening","Hello chatbot","Hello Chatbot"],
+        "responses": ["Hello!!!","Hii","How are You?","I'm doing Great","Hello User","Hello Visitor"],
+        "context_set": [""]
+        },
+        {"tag" : "goodbye",
+        "patterns": ["See you again","See you later","Goodbye","Im leaving","Have a Good Day","Have a nice day","Talk to you later","See you later"],
+        "responses": ["Goodbye","See you soon","See you later","Have a Nice Day","Have a nice weekend"],
+        "context_set": [""]
+        },
+        {"tag" : "name",
+        "patterns": ["What is your name?","Whats your name?"],
+        "responses": ["Im a Medical Assistant Chatbot","My name is Dr Chatbot"],
+        "context_set": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I provide Medical Assistance to Mental Health Issues", "I can help you figure out the cause of your Mental illness & provide Solutions"],
+         "context": [""]
+        },
+        {"tag": "sleep",
+         "patterns": ["Get disturbed while sleeping", "Unable to Sleep early", "Feel Sleepless during the day", "Wake up suudenly in the middle of the night", "Negative thoughts while sleeping"],
+         "responses": ["Reduce your Screen time from Electronic Devices","Get around 7-9 hours of Sleep","Medicate or Exercise for 15-30 mins to regulate your Mind","Avoid afternoon naps and plan a fixed sleeping schedule"],
+        "context": [""]
+        },
+        {"tag": "concentrate",
+         "patterns": ["Cannot concentrate","Cannot focus","Headache pain","Feeling anxious",""],
+         "responses": ["Look for potential short breaks during work","Massage your Scalp and get Sufficient sleep"],
+         "context": [""]
+        },
+        {"tag" : "grief_loss_stress",
+        "patterns": ["Divorced recently","Lost my Mom/Dad/Parents"],
+        "responses": ["Oh Sad to Hear that. Grieving over is always not the right solution. A better approach is to Embrace your loss & hope for Better. Trust me it gets easy with Time :)","It is Disheartening to hear that. Following a religion or Spiritual practice may help you in making Mental Peace."],
+        "context_set": [""]
+        },
+        {"tag" : "Social_anxiety",
+        "patterns": ["I feel insecure at Weddings/parties/events.","Feel insecure around people.","People dont talk to me.","I feel lonely."],
+        "responses": ["You need to Socialise more because only then you will be able to Mix up with People.Get together with like minded People who understand you Better.",
+                "Talk to your Closed ones about your Problem. Be it Family,Friends or even mentors who may guide you to the Problem.",
+                "Know your Strengths and remember that you are Unique in Yourself. When some approaches, remember that you need to keep things simple. Often Shy people Overthink a lot."],
+        "context_set": [""]
+        },
+        {"tag" : "adddiction_remedy",
+        "patterns": ["How can i cure Addiction?","Is there a way to cure Alcohol abuse?","How to Quit smoking?","How to Quit Alcohol?","Can you Help me in Curing Addictions?","Treatment for curing addictions?","Cope up with addictions"],
+        "responses": ["Although a professional physchiatrist is Needed, you can try Dopamine Fasts where you quit all pleasing activities for 1-2 days which helps in Bringing down Dopamine release. Also buid your Willpower to Overcome withdrawls so that you Don't Loose Hope. ",
+                "Try seeking new habits which are equally Pleasing to you yet healthy, which should help in reducing your Addictions.The goal is to replace Bad with Good.Still it is recommended to Consult a Professional Doctor.",
+                "Start with cutting your Addiction consumption with less amounts, then increasing further reductions. The key here is to plan a Long term Strategy.Also get some help from a Professional."],
+        "context_set": [""]
+        },
+        {"tag" : "addiction_causes",
+        "patterns": ["I am suffering from Alcohol consumption","I smoke a lot","Drink Alcohol","Smoke cigarettes","Suffering from Drug abuse","What causes adddiction","What causes adddiction according to you?"],
+        "responses": ["Addiction is a result of high levels of Dopamine chemical release from Brain. Dopamine gives haapy feel after any task hence your Brain loves Addictions","Human Brain releases High levels of Dopamine when subjected to Substance Abuse. The high levels of Dopamine is what keeps your Mood regulated despite Harmful Addictions."],
+        "context_set": [""]
+        },
+        {"tag" : "happy",
+        "patterns": ["Make me happy","I am sad","I want to some jokes","Can you tell me jokes"],
+        "responses": ["The purpose of our lives is to be happy." ,"Life is what happens when you're busy making other plans." 
+        ,"Get busy living or get busy dying." ,"You only live once, but if you do it right, once is enough."
+        ,"Many of life’s failures are people who did not realize how close they were to success when they gave up."],
+        "context_set": [""]
+        },
+        {"tag" : "sad",
+        "patterns": ["Make me happy","I am sad","I want to some jokes","Can you tell me jokes"],
+        "responses": ["Sadness flies away on the wings of time.","Don't cry over someone who wouldn't cry over you."],
+        "context_set": [""]
+        },
+        {"tag" : "motivate",
+        "patterns": ["Make me happy","I am sad","I want to some jokes","Can you tell me jokes","Please Motivate me", "I had a bad day"],
+        "responses": ["Breathe. Its just a bad day, not a bad life.",
+        "Difficult roads often lead to beautiful destinations.",
+        "When you have a bad day, a really bad day, try and treat the world better than it treated you.", "A bad day only lasts 24 hours",
+        "You have to fight through some bad days to earn the best days of your life.",
+        "On the other side of the clouds is a bright blue sky.",
+        "Everything is going to be okay. Actually, it ll turn out better than okay. You’ll see.",
+        "No rain, no flowers.",
+        "You have good days, you have bad days. But the main thing is to grow mentally.",
+        "Look for something positive in each day, even if some days you have to look a little harder"],
+        "context_set": [""]
+        },
+        {"tag" : "die",
+        "patterns": ["I want to die","deadly feeling"],
+        "responses": ["Be happy with what you have. Be excited about what you want.",
+        "Life is a journey, and if you fall in love with the journey, you will be in love forever."],
+        "context_set": [""]
+        }
+        ]
+
+}
